@@ -9,26 +9,339 @@
     <title>Главная</title>
 </head>
 <body>
-    <header>
-        <div class="w-full flex">
-            <div id="mobile__nav" class="bg-figmabg1 fixed top-0 right-0 flex flex-col h-screen w-full md:w-1/2 pt-12 transform translate-x-full transition duration-300 ease-in-out z-30">
-                <svg id="toggler__expanded" class="text-black w-6 h-6 top-4 left-4 cursor-pointer ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-                <div class="flex flex-col h-full mt-4 p-4">
-                    <a href="" class="uppercase my-5">All products</a>
-                    <a href="" class="uppercase my-5">Solutions</a>
-                    <a href="" class="uppercase my-5">About</a>
-                    <a href="" class="uppercase my-5">Support</a> 
-                </div>
-            </div>
-            <div class="w-full h-screen fixed top-0 right-0 hidden z-10 bg-gray-900 opacity-70" id="overlay"></div>
+    <header class="w-full bg-white lg:pt-[26px] lg:pb-[18px] relative">
+        <div class="flex items-center justify-between container mx-auto py-1.5 px-4">
+            <a href="">
+                <img src="Assets/Images/header/logo.png" alt="">
+            </a>
+            <nav class="flex items-center gap-10 text-[#292F36] max-lg:flex-col bg-white max-lg:absolute max-lg:w-full top-0 left-0 max-lg:-translate-y-full transition-all duration-500 max-lg:border-t-2 border-[#292F36] max-lg:py-4" id="menu">
+                <a href="" class="text-[#CDA274]">Home</a>
+                <a href="" class="duration-500 transition-all hover:text-[#CDA274]">About Us</a>
+                <a href="" class="duration-500 transition-all hover:text-[#CDA274]">Services</a>
+                <a href="" class="duration-500 transition-all hover:text-[#CDA274]">Pages</a>
+                <a href="" class="duration-500 transition-all hover:text-[#CDA274]">Contact Us</a>
+            </nav>
+            <button id="toggler" type="button" class="flex flex-col w-6 gap-1 lg:hidden">
+                <span class="w-full rounded-full bg-[#CDA274] h-0.5"></span>
+                <span class="w-full rounded-full bg-[#CDA274] h-0.5"></span>
+                <span class="w-full rounded-full bg-[#CDA274] h-0.5"></span>
+            </button>
         </div>
     </header>  
 
-    <footer></footer>
+    <div class="w-full bg-[url(Assets/Images/started/main.png)] bg-cover bg-left">
+        <div class="container mx-auto flex flex-col justify-center gap-5 min-h-[600px] md:min-h-[700px] lg:min-h-[831px] px-4">
+            <p class="text-[#292F36] text-5xl md:text-7xl lg:text-[80px] lg:w-1/2 lg:leading-[96px]">Let's Create Your Dream Interior</p>
+            <div class="flex flex-col">
+                <p class="text-[#4D5053] md:text-lg lg:text-[22px]">The world needs innovators and problem solvers who turn</p>
+                <p class="text-[#4D5053] md:text-lg lg:text-[22px]">challenges into greater opportunities.</p>
+            </div>
+            <button class="rounded-[18px] bg-[#292F36] py-4 flex items-center gap-5 w-[207px] text-white justify-center">
+                <span>Get Started</span>
+                <img src="Assets/Images/icons/arrow.png" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="container mx-auto py-8 md:py-12 max-md:gap-4 lg:py-[100px] flex max-md:flex-col items-center justify-center px-4">
+        <div class="flex flex-col px-4 py-8 md:py-12 lg:pt-[75px] lg:pb-[70px] md:px-10 lg:px-[52px] gap-4 items-center max-md:shadow-[0_0_20px_-7px] max-md:rounded-2xl">
+            <p class="text-[#292F36] text-lg md:text-xl lg:text-2xl">Interior Design</p>
+            <p class="text-[#4D5053] md:text-lg lg:text-[22px] grow w-fit">Enhancing the interior to achieve a healthier environment for the people using right space.</p>
+            <a href="" class="flex items-center gap-2 md:pt-2 lg:pt-4">
+                <span>View More</span>
+                <img src="Assets/Images/icons/arrow2.png" alt="">
+            </a>
+        </div>
+        <div class="flex flex-col px-4 py-8 md:py-12 lg:pt-[75px] lg:pb-[70px] md:px-10 lg:px-[52px] gap-4 items-center max-md:shadow-[0_0_20px_-7px] max-md:rounded-2xl">
+            <p class="text-[#292F36] text-lg md:text-xl lg:text-2xl">Furniture</p>
+            <p class="text-[#4D5053] md:text-lg lg:text-[22px] grow w-fit">Movable articles that are used to make a room or building suitable for living or working.</p>
+            <a href="" class="flex items-center gap-2 md:pt-2 lg:pt-4">
+                <span>View More</span>
+                <img src="Assets/Images/icons/arrow2.png" alt="">
+            </a>
+        </div>
+        <div class="flex flex-col px-4 py-8 md:py-12 lg:pt-[75px] lg:pb-[70px] md:px-10 lg:px-[52px] gap-4 items-center max-md:shadow-[0_0_20px_-7px] max-md:rounded-2xl">
+            <p class="text-[#292F36] text-lg md:text-xl lg:text-2xl">Flooring</p>
+            <p class="text-[#4D5053] md:text-lg lg:text-[22px] grow w-fit">Thin object any finished material applied over a floor structure to provide a walking surface.</p>
+            <a href="" class="flex items-center gap-2 md:pt-2 lg:pt-4">
+                <span>View More</span>
+                <img src="Assets/Images/icons/arrow2.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="container mx-auto flex max-lg:flex-col px-4 gap-8 md:gap-12 lg:gap-20 items-center">
+        <div class="flex flex-col gap-10 w-full lg:w-1/2">
+            <p class="text-[#292F36] text-2xl md:text-3xl lg:text-[50px] lg:leading-[65px]">We Tackle The Most Challenging Designs</p>
+            <div>
+                <p class="text-[#4D5053] md:text-lg lg:text-[22px]">The world needs innovators and problem solvers who turn challenges into greater opportunities. We have</p>
+                <p class="text-[#4D5053] md:text-lg lg:text-[22px]">an insatiable curiosity about transformative trends challenging the status.</p>
+            </div>
+            <div class="flex items-center gap-5">
+                <img src="Assets/Images/icons/phone.png" alt="">
+                <div>
+                    <a href="tel:012345678" class="text-[#4D5053] text-lg lg:text-[24px]">012345678</a>
+                    <p class="text-[#4D5053] md:text-lg lg:text-[22px]">Call Us Anytime</p>
+                </div>
+            </div>
+            <button class="rounded-[18px] bg-[#292F36] py-4 flex items-center gap-5 w-[263px] text-white justify-center mt-2.5">
+                <span>Get Free Estimate</span>
+                <img src="Assets/Images/icons/arrow.png" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="w-full py-8 md:py-12 lg:py-[140px]">
+        <div class="flex flex-col items-center gap-6 md:gap-8 lg:gap-[47px] container mx-auto px-4 md:px-8 lg:px-[50px] py-8 md:py-12 lg:pt-[103px] lg:pb-[121px] bg-[#F4F0EC] rounded-[70px]">
+            <div class="text-center flex flex-col gap-1">
+                <p class="text-[#292F36] text-2xl md:text-3xl lg:text-[45px]">What the People Thinks</p>
+                <p class="text-[#292F36] text-2xl md:text-3xl lg:text-[45px]">About Interno</p>
+            </div>
+            <div class="flex max-lg:flex-col gap-4 items-center">
+                <div class="flex flex-col bg-white py-4 md:py-8 lg:py-[50px] px-4 md:px-6 lg:px-9 gap-4 lg:gap-6 rounded-[30px]">
+                    <div class="flex items-center gap-5">
+                        <img src="Assets/Images/reviews/1.png" alt="">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-[#292F36] text-lg lg:text-[25px]">Lisa Clairton</p>
+                            <p class="text-[#4D5053] max-md:text-sm lg:text-lg">New York, USA</p>
+                        </div>
+                    </div>
+                    <p class="text-[#4D5053] md:text-lg lg:text-xl">We selected Interno interior because of rigorous design background & education.</p>
+                </div>
+                <div class="flex flex-col bg-white py-4 md:py-8 lg:py-[50px] px-4 md:px-6 lg:px-9 gap-4 lg:gap-6 rounded-[30px]">
+                    <div class="flex items-center gap-5">
+                        <img src="Assets/Images/reviews/2.png" alt="">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-[#292F36] text-lg lg:text-[25px]">David Knight</p>
+                            <p class="text-[#4D5053] max-md:text-sm lg:text-lg">Sydney, Australia</p>
+                        </div>
+                    </div>
+                    <p class="text-[#4D5053] md:text-lg lg:text-xl">The team exceeded our expectations and emerged as leaders of our project’s.</p>
+                </div>
+                <div class="flex flex-col bg-white py-4 md:py-8 lg:py-[50px] px-4 md:px-6 lg:px-9 gap-4 lg:gap-6 rounded-[30px]">
+                    <div class="flex items-center gap-5">
+                        <img src="Assets/Images/reviews/3.png" alt="">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-[#292F36] text-lg lg:text-[25px]">Lisa Clairton</p>
+                            <p class="text-[#4D5053] max-md:text-sm lg:text-lg">Paris, France</p>
+                        </div>
+                    </div>
+                    <p class="text-[#4D5053] md:text-lg lg:text-xl">They balanced the architectural vision and the project realities beautifully.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 lg:gap-[110px] items-center w-fit">
+        <a href="" class="flex items-center justify-center">
+            <img src="Assets/Images/brands/1.png" alt="">
+        </a>
+        <a href="" class="flex items-center justify-center">
+            <img src="Assets/Images/brands/2.png" alt="">
+        </a>
+        <a href="" class="flex items-center justify-center">
+            <img src="Assets/Images/brands/3.png" alt="">
+        </a>
+        <a href="" class="flex items-center justify-center">
+            <img src="Assets/Images/brands/4.png" alt="">
+        </a>
+        <a href="" class="flex items-center justify-center">
+            <img src="Assets/Images/brands/5.png" alt="">
+        </a>
+    </div>
+
+    <div class="w-full py-8 md:py-12 lg:py-20">
+        <div class="container mx-auto px-4 lg:pt-3 lg:pb-[60px] flex flex-col gap-8 md:gap-12 lg:gap-[70px] items-center">
+            <div class="flex flex-col gap-5 items-center">
+                <p class="text-[#292F36] text-2xl md:text-3xl lg:text-[47px]">Recent Projects</p>
+                <div class="flex flex-col gap-1">
+                    <p class="text-[#4D5053] md:text-lg lg:text-[22px]">With tools to make every part of your process more human and a support team</p>
+                    <p class="text-[#4D5053] md:text-lg lg:text-[22px]">excited to help you, getting started with us never been easier.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-y-[61px] w-full">
+                <div class="flex flex-col gap-6">
+                    <img src="Assets/Images/projects/1.png" alt="">
+                    <div class="flex items-center justify-between">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-[#292F36] text-lg md:text-xl lg:text-2xl">Winery Dry Creek Building</p>
+                            <p class="text-[#4D5053] md:text-lg lg:text-[22px]">Art Modern</p>
+                        </div>
+                        <a href="">
+                            <img src="Assets/Images/icons/arrow3.png" alt="" class="max-lg:w-[52px]">
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <img src="Assets/Images/projects/2.png" alt="">
+                    <div class="flex items-center justify-between">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-[#292F36] text-lg md:text-xl lg:text-2xl">Creative Workplace Design</p>
+                            <p class="text-[#4D5053] md:text-lg lg:text-[22px]">Minimalist</p>
+                        </div>
+                        <a href="">
+                            <img src="Assets/Images/icons/arrow3.png" alt="" class="max-lg:w-[52px]">
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <img src="Assets/Images/projects/3.png" alt="">
+                    <div class="flex items-center justify-between">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-[#292F36] text-lg md:text-xl lg:text-2xl">Bedroom Interior Pot Work</p>
+                            <p class="text-[#4D5053] md:text-lg lg:text-[22px]">Modern</p>
+                        </div>
+                        <a href="">
+                            <img src="Assets/Images/icons/arrow3.png" alt="" class="max-lg:w-[52px]">
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <img src="Assets/Images/projects/4.png" alt="">
+                    <div class="flex items-center justify-between">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-[#292F36] text-lg md:text-xl lg:text-2xl">Light Ambience Sepia Design</p>
+                            <p class="text-[#4D5053] md:text-lg lg:text-[22px]">Scandinavian</p>
+                        </div>
+                        <a href="">
+                            <img src="Assets/Images/icons/arrow3.png" alt="" class="max-lg:w-[52px]">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-[#F4F0EC] px-4 py-8 md:py-12 lg:py-[140px]">
+        <div class="container mx-auto flex max-md:flex-col items-center gap-12 md:gap-14 lg:gap-[72px] w-max">        
+            <div class="flex flex-col gap-6 md:gap-8 lg:gap-10 items-center">
+                <p class="text-[#CDA274] text-5xl md:text-7xl lg:text-[85px]">12</p>
+                <p class="text-[#4D5053] md:text-lg lg:text-[22px] text-center">Years Of Experiance</p>
+            </div>
+            <div class="max-lg:hidden w-px h-[195px] bg-[#CDA274]"></div>
+            <div class="flex flex-col gap-6 md:gap-8 lg:gap-10 items-center">
+                <p class="text-[#CDA274] text-5xl md:text-7xl lg:text-[85px]">5K</p>
+                <p class="text-[#4D5053] md:text-lg lg:text-[22px] text-center">Success Project</p>
+            </div>
+            <div class="max-lg:hidden w-px h-[195px] bg-[#CDA274]"></div>
+            <div class="flex flex-col gap-6 md:gap-8 lg:gap-10 items-center">
+                <p class="text-[#CDA274] text-5xl md:text-7xl lg:text-[85px]">1K</p>
+                <p class="text-[#4D5053] md:text-lg lg:text-[22px] text-center">Active Project</p>
+            </div>
+            <div class="max-lg:hidden w-px h-[195px] bg-[#CDA274]"></div>
+            <div class="flex flex-col gap-6 md:gap-8 lg:gap-10 items-center">
+                <p class="text-[#CDA274] text-5xl md:text-7xl lg:text-[85px]">4K</p>
+                <p class="text-[#4D5053] md:text-lg lg:text-[22px] text-center">Happy Customers</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full px-4 py-8 md:py-12 lg:py-[140px]">
+        <div class="container mx-auto px-4 lg:pt-3 lg:pb-[60px] flex flex-col gap-8 md:gap-12 lg:gap-[70px] items-center">
+            <div class="flex flex-col gap-5 items-center">
+                <p class="text-[#292F36] text-2xl md:text-3xl lg:text-[47px]">Recent Blogs</p>
+                <div class="flex flex-col gap-1">
+                    <p class="text-[#4D5053] md:text-lg lg:text-[22px]">Get updates about our latest trends and techniques used in</p>
+                    <p class="text-[#4D5053] md:text-lg lg:text-[22px]">interior design project works.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-y-10 w-full">
+                <div class="flex flex-col gap-4 items-center p-5 rounded-[62px] border border-[#E7E7E7]">
+                    <div class="relative w-full">
+                        <img src="Assets/Images/blogs/1.png" alt="" class="w-full">
+                        <p class="absolute bg-white p-2.5 text-[#4D5053] text-xs md:text-sm lg:text-base rounded-[8px] rounded-bl-none left-6 bottom-7">Kitchen Design</p>
+                    </div>
+                    <p class="text-[#292F36] md:text-lg lg:text-[25px]">Residential Interior Designer In New York, USA</p>
+                    <div class="flex items-center justify-between mt-5 w-full">
+                        <p class="text-[#4D5053] text-xs md:text-sm lg:text-base">November 23, 2021</p>
+                        <a href="">
+                            <img src="Assets/Images/icons/arrow3.png" alt="" class="w-[52px]">
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 items-center p-5 rounded-[62px] border border-[#E7E7E7]">
+                    <div class="relative w-full">
+                        <img src="Assets/Images/blogs/2.png" alt="" class="w-full">
+                        <p class="absolute bg-white p-2.5 text-[#4D5053] text-xs md:text-sm lg:text-base rounded-[8px] rounded-bl-none left-6 bottom-7">Living Room</p>
+                    </div>
+                    <p class="text-[#292F36] md:text-lg lg:text-[25px]">How To Choose The Best Wall Art & Decor House?</p>
+                    <div class="flex items-center justify-between mt-5 w-full">
+                        <p class="text-[#4D5053] text-xs md:text-sm lg:text-base">November 23, 2021</p>
+                        <a href="">
+                            <img src="Assets/Images/icons/arrow3.png" alt="" class="w-[52px]">
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 items-center p-5 rounded-[62px] border border-[#E7E7E7]">
+                    <div class="relative w-full">
+                        <img src="Assets/Images/blogs/3.png" alt="" class="w-full">
+                        <p class="absolute bg-white p-2.5 text-[#4D5053] text-xs md:text-sm lg:text-base rounded-[8px] rounded-bl-none left-6 bottom-7">Minimalist Interior</p>
+                    </div>
+                    <p class="text-[#292F36] md:text-lg lg:text-[25px]">Tips To Increase The Interior Value Of Your House</p>
+                    <div class="flex items-center justify-between mt-5 w-full">
+                        <p class="text-[#4D5053] text-xs md:text-sm lg:text-base">November 23, 2021</p>
+                        <a href="">
+                            <img src="Assets/Images/icons/arrow3.png" alt="" class="w-[52px]">
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 items-center p-5 rounded-[62px] border border-[#E7E7E7]">
+                    <div class="relative w-full">
+                        <img src="Assets/Images/blogs/4.png" alt="" class="w-full">
+                        <p class="absolute bg-white p-2.5 text-[#4D5053] text-xs md:text-sm lg:text-base rounded-[8px] rounded-bl-none left-6 bottom-7">Kitchen Design</p>
+                    </div>
+                    <p class="text-[#292F36] md:text-lg lg:text-[25px]">Best Solution For Any Office & Business Interior</p>
+                    <div class="flex items-center justify-between mt-5 w-full">
+                        <p class="text-[#4D5053] text-xs md:text-sm lg:text-base">November 23, 2021</p>
+                        <a href="">
+                            <img src="Assets/Images/icons/arrow3.png" alt="" class="w-[52px]">
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 items-center p-5 rounded-[62px] border border-[#E7E7E7]">
+                    <div class="relative w-full">
+                        <img src="Assets/Images/blogs/5.png" alt="" class="w-full">
+                        <p class="absolute bg-white p-2.5 text-[#4D5053] text-xs md:text-sm lg:text-base rounded-[8px] rounded-bl-none left-6 bottom-7">Living Room</p>
+                    </div>
+                    <p class="text-[#292F36] md:text-lg lg:text-[25px]">Get Solution For Building Construction Work</p>
+                    <div class="flex items-center justify-between mt-5 w-full">
+                        <p class="text-[#4D5053] text-xs md:text-sm lg:text-base">November 23, 2021</p>
+                        <a href="">
+                            <img src="Assets/Images/icons/arrow3.png" alt="" class="w-[52px]">
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 items-center p-5 rounded-[62px] border border-[#E7E7E7]">
+                    <div class="relative w-full">
+                        <img src="Assets/Images/blogs/6.png" alt="" class="w-full">
+                        <p class="absolute bg-white p-2.5 text-[#4D5053] text-xs md:text-sm lg:text-base rounded-[8px] rounded-bl-none left-6 bottom-7">Minimalist Interior</p>
+                    </div>
+                    <p class="text-[#292F36] md:text-lg lg:text-[25px]">Attain The Best Finish For The Kitchen Cabinets</p>
+                    <div class="flex items-center justify-between mt-5 w-full">
+                        <p class="text-[#4D5053] text-xs md:text-sm lg:text-base">November 23, 2021</p>
+                        <a href="">
+                            <img src="Assets/Images/icons/arrow3.png" alt="" class="w-[52px]">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto bg-[#292F36] rounded-[70px] flex flex-col gap-7 px-4 items-center justify-center py-16 md:py-20 lg:py-[100px] text-white">
+        <p class="text-2xl md:text-3xl lg:text-[50px]">Wanna join the interno?</p>
+        <p class="md:text-lg lg:text-[22px]">Contact Us & Get a Free Consultation</p>
+        <button class="rounded-[18px] bg-[#CDA274] py-4 flex items-center gap-5 w-[241px] justify-center mt-1">
+            <span>Connect With us</span>
+            <img src="Assets/Images/icons/arrow4.png" alt="">
+        </button>
+    </div>
+
+    <footer>
+
+    </footer>
     
-    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js" 
     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
     crossorigin="anonymous"></script>
